@@ -25,4 +25,9 @@ public class AuthController {
     public ResponseEntity<?> generateOtp(@RequestBody AuthDto authDto) {
     return authService.generateOtp(authDto);
     }
+
+    @PostMapping("/verify")
+    public ResponseEntity<?> verify(@RequestBody AuthDto authDto) {
+        return null;
+    }
 }
